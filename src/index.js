@@ -61,4 +61,5 @@ document.addEventListener("DOMContentLoaded", function(){
   execute(populateDogImgContainer, "https://dog.ceo/api/breeds/image/random/4");
   console.log("me in listener");
   execute(listDogBreeds, "https://dog.ceo/api/breeds/list/all");
+  console.log("me in listener too");
 });
