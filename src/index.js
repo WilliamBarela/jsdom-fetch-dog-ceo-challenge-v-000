@@ -29,6 +29,7 @@ function colorizeLi(li){
 }
 
 function listDogBreeds(json){
+  console.log("me in listDog");
   const ul = document.getElementById('dog-breeds');
   const breeds = json.message
   
