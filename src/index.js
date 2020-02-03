@@ -8,7 +8,6 @@ function execute(f, url){
 
 
 function populateDogImgContainer(json){
-  console.log("me in popDog");
   const dogImgContainer = document.getElementById('dog-image-container');
   const dogImgs = json.message;
   
@@ -29,7 +28,6 @@ function colorizeLi(li){
 }
 
 function listDogBreeds(json){
-  console.log("me in listDog");
   const ul = document.getElementById('dog-breeds');
   const breeds = json.message
   
@@ -60,7 +58,5 @@ function sortBreeds(){
 
 document.addEventListener("DOMContentLoaded", function(){
   execute(populateDogImgContainer, "https://dog.ceo/api/breeds/image/random/4");
-  console.log("me in listener");
   execute(listDogBreeds, "https://dog.ceo/api/breeds/list/all");
-  console.log("me in listener too");
 });
